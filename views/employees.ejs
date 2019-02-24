@@ -1,0 +1,18 @@
+<% include partials/header %>
+<h1>This is the Employees page</h1>
+
+<% employees.forEach(function(emp){ %>
+
+    <li> 
+        <%=emp.firstName%>
+        <%=emp.secondName%>
+        <%=emp.email%>
+        <%=emp.phone%>
+        <%=emp.password%>
+        <%=emp.retypePassword%>
+        <%=emp.state%>
+        <%=emp.zipcode%>
+   </li>
+    
+<% }); %>
+<% include partials/footer %>
