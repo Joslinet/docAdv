@@ -56,6 +56,8 @@ app.use("/employees", employeeRoutes);
 app.use("/employees/:id", employeeRoutes);
 app.use("/application", employeeRoutes);
 
-app.listen(3001, 'localhost', function() {
-  console.log("... port 3001 in %s mode", app.settings.env);
-});
+//app.listen(3001, 'localhost', function() {
+//  console.log("... port 3001 in %s mode", app.settings.env);
+//});
+
+app.listen(process.env.PORT, process.env.IP);
