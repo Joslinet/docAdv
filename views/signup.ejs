@@ -1,98 +1,61 @@
 <% include partials/header %>
-<!--
-<div class="container">
-    <div class="row">
-        <div>
-            <h1 style="text-align: center">Sign Up</h1>
-        </div>
-        <div style="width: 30%; margin: 25px auto;">
-            <form action="/signup" method="POST">
-                <div class="form-group">
-                    <input class="form-control" type="text" name="firstName" placeholder="First Name">
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" name="lastName" placeholder="Last Name">
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" name="username" placeholder="Username">
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" name="email" placeholder="Email Address">
-                </div>                
-                <div class="form-group">
-                    <input class="form-control" type="text" name="phone" placeholder="Phone Number">
-                </div>
-                 <div class="form-group">
-                    <input class="form-control" type="text" name="password" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" name="retypePassword" placeholder="Retype password">
-                </div>
-                 <div class="form-group">
-                    <input class="form-control" type="text" name="state" placeholder="State">
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" name="zipcode" placeholder="Zip Code">
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
-                </div>
-            </form>
-            <a href="/employees">Go Back</a>
-        </div>
-    </div>
-</div>
--->
 
 
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 ">
- 
-    </div>
-    <div class="col-sm-8 text-left"> 
-        <div>
-            <h1 style="text-align: center">Sign Up</h1>
-        </div>
-        <div style="width: 30%; margin: 25px auto;">
-            <form action="/signup" class="form-inline" method="POST">
-                <div class="form-group">
-                    First Name:  <input class="form-control" type="text" name="firstName" placeholder="First Name">
-                </div>
-                <div class="form-group">                
-                    Last Name:  <input class="form-control" type="text" name="lastName" placeholder="Last Name">
-                </div>
-                <div class="form-group">
-                    Username: <input class="form-control" type="text" name="username" placeholder="Username">
-                </div>
-                <div class="form-group">
-                    Email Address: <input class="form-control" type="text" name="email" placeholder="Email Address">
-                </div>                
-                <div class="form-group">
-                    Phone Number: <input class="form-control" type="text" name="phone" placeholder="Phone Number">
-                </div>
-                 <div class="form-group">
-                     Password: <input class="form-control" type="text" name="password" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    Retype Password: <input class="form-control" type="text" name="retypePassword" placeholder="Retype password">
-                </div>
-                 <div class="form-group">
-                     State: <input class="form-control" type="text" name="state" placeholder="State">
-                </div>
-                <div class="form-group">
-                    Zip Code: <input class="form-control" type="text" name="zipcode" placeholder="Zip Code">
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
-                </div>
-            </form>
-            <a href="/">Go Back</a>
-        </div>
-    </div>
-    <div class="col-sm-2">
 
+    <div class="dheader">
+      <h1>Sign Up</h1>
     </div>
+    <div class="dmain">
+    <form action="/signup" method="POST" onsubmit="retrun false">
+      <div class="form-group row">
+        <label for="inputFirstName" class="col-sm-4  col-form-label">First Name:</label>
+        <div class="col-sm-6 ">
+          <input class="form-control" id="inputFirstName" type="text" name="firstName" placeholder="First Name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputLastName" class="col-sm-4 col-form-label">Last Name:</label>
+        <div class="col-sm-6">
+          <input class="form-control" id="inputLastName" type="text" name="lastName" placeholder="Last Name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputusername" class="col-sm-4 col-form-label">Username:</label>
+        <div class="col-sm-6">
+          <input class="form-control" id="inputusername" type="text" name="username" placeholder="Username">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputEmailAddress" class="col-sm-4 col-form-label">Email Address:</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="text" name="email" placeholder="Email Address">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Password:</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="password" name="password" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputRetypePassword" class="col-sm-4 col-form-label">Retype
+          Password:</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="password"name="retypePassword" placeholder="Retype password">
+        </div>
+
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-6">
+          <button class="btn btn-lg btn-primary btn-block" name="submit">Submit</button>
+        </div>
+      </div>
+    </form>
   </div>
-</div>
+
+
+
+
+
 <% include partials/footer %>
