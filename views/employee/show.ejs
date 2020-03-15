@@ -1,0 +1,8 @@
+<% include ../partials/header %>
+<h1>This is the Employees page</h1>
+
+<% Object.keys(employee).forEach(function(emp) { %>
+  <%= employee.emp %>
+<% }); %>
+
+<% include ../partials/footer %>

@@ -1,0 +1,26 @@
+<% include ../partials/header %>
+<h1>This is the Employees page</h1>
+
+<% employees.forEach(function(emp){ %>
+
+    <li> 
+        <%=emp.firstName%>
+        <%=emp.lastName%>
+        <%=emp.dateOfBirth%>
+        <%=emp.email%>
+        <%=emp.phone%>
+        <%=emp.homeAddress%>
+        <%=emp.ssNo%>
+        <%=emp.driverLicense%>
+        <%=emp.state%>
+        <%=emp.zipcode%>
+        <%=emp.professionalLicence%>
+        <%=emp.jobAppliedFor%>
+        <%=emp.salaryDesired%>
+        <%=emp.emergencyContactName%>
+        <%=emp.Phone%>
+        <%=emp.Relationship":"brother"%>
+   </li>
+    
+<% }); %>
+<% include ../partials/footer %>

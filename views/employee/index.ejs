@@ -1,0 +1,17 @@
+<% include ../partials/header %>
+<div class="dheader">
+
+<h1>Employees</h1>
+	</div>
+<div class="dmain">
+<div class="demployeeList">
+<% employees.forEach(function(emp){ %> 
+    <div class="newline">First Name: </div> <div><%=emp.firstName%></div>
+	<div>Last Name: </div> <div><%=emp.lastName%></div>
+	<div>Position: </div> <div><%=emp.jobPositionAppliedFor%></div>
+	<div>Phone:</div> <div><%=emp.phone%></div><div><a href="#" class="btn btn-primary">More Info </a></div> 
+<% }); %>
+
+</div>
+</div>
+<% include ../partials/footer %>
